@@ -1,3 +1,5 @@
+/* src\app\(afterLogin)\_component\logoutButton.module.css */
+
 .logOutButton {
     width: 66px;
     height: 66px;
@@ -25,7 +27,7 @@
     border-radius: 50%;
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1200px) {
     .logOutButton {
         width: 258px;
     }

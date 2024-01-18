@@ -1,7 +1,10 @@
-/* 모두 추가 */
+/* src\app\(afterLogin)\_component\navMenu.module.css */
 .navPill {
+    /* flex 로 배치 하되 인라인 성격은 유지 , block 이면 가로 넓이 다차지 */
+    /* border: 1px solid red; */
     display: inline-flex;
-    height: 50px;
+    /* 각 요소들의 간격은 높이와 padding 으로 조절 되고 있음 */
+    height: 45px;
     padding: 12px;
     align-items: center;
 }
@@ -12,10 +15,10 @@
 }
 
 .navPill>div {
-    display: none;
+    margin-left: 14px;
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1200px) {
     .navPill>div {
         margin-left: 20px;
         margin-right: 16px;

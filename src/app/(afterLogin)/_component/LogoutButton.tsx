@@ -1,3 +1,4 @@
+// src\app\(afterLogin) \_component\LogoutButton.tsx
 "use client"
 
 import style from "./logoutButton.module.css";
