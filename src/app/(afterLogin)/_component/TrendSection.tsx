@@ -1,3 +1,4 @@
+// src/app/(afterLogin)/_component/TrendSection.tsx
 "use client";
 
 import Trend from './Trend';

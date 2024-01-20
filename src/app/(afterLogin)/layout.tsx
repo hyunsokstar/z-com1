@@ -1,5 +1,4 @@
 // src\app\(afterLogin)\layout.tsx
-
 import { ReactNode } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -11,8 +10,9 @@ import style from "./layout.module.css"
 import RightSearchZone from "./_component/RightSearchZone";
 import FollowRecommend from "./_component/FollowRecommend";
 
+type Props = { children: ReactNode, modal: ReactNode }
 
-export default function afterLoginLayout({ children }: { children: ReactNode }) {
+export default function afterLoginLayout({ children, modal }: Props) {
     return (
         <div className={style.container} >
             <header className={style.leftSectionWrapper}>
@@ -67,7 +67,7 @@ export default function afterLoginLayout({ children }: { children: ReactNode }) 
                 </div>
 
             </div>
-
+            {modal}
         </div >
     )
 }

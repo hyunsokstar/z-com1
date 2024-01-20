@@ -12,7 +12,6 @@ export default function Home() {
             <TabProvider>
                 <Tab />
                 <PostForm />
-
                 <Post noImage={false} />
                 <Post />
                 <Post />

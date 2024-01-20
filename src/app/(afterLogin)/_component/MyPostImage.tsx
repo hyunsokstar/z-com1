@@ -4,25 +4,6 @@ import style from "@/app/(afterLogin)/_component/post.module.css";
 import cx from 'classnames';
 
 
-// imageInfoArray: [
-//     {
-//         imageId: 1,
-//         link: 'https://loremflickr.com/640/480?lock=8337601968734208'
-//     },
-//     {
-//         imageId: 2,
-//         link: 'https://loremflickr.com/640/480?lock=8894055542947840'
-//     },
-//     {
-//         imageId: 3,
-//         link: 'https://loremflickr.com/640/480?lock=4766751508135936'
-//     },
-//     {
-//         imageId: 4,
-//         link: 'https://loremflickr.com/640/480?lock=3598788138631168'
-//     }
-// ]
-
 interface imageInfo {
     imageId: number
     link: string
@@ -33,19 +14,11 @@ type Props = {
 }
 
 const MyPostImage = ({ imageInfoArray }: Props) => {
-
-    console.log("imageInfoArray : ", imageInfoArray);
-
-
-    // return (
-    // <img src={imageInfoArray[0]?.link} alt="" />
-    // <div>{imageInfoArray.length}</div>
-    // )
+    // console.log("imageInfoArray : ", imageInfoArray);
 
     if (imageInfoArray.length === 0) return (
         <div>no images</div>
     )
-    // if (imageInfoArray.length) return null;
     if (imageInfoArray.length === 1) {
         return (
             <Link

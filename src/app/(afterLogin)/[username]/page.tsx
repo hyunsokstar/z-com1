@@ -1,3 +1,4 @@
+// src\app\(afterLogin)\[username]\page.tsx
 import React from 'react'
 
 type Props = {}

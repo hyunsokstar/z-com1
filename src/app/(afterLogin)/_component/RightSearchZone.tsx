@@ -1,3 +1,4 @@
+// src/app/(afterLogin)/_component/RightSearchZone.tsx
 "use client";
 import { usePathname } from "next/navigation";
 import React from "react";

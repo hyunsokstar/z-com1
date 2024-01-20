@@ -1,17 +1,27 @@
-import React from 'react'
+// src/app/(afterLogin)/explore/page.tsx
+import style from "./explore.module.css";
+import SearchForm from "@/app/(afterLogin)/_component/SearchForm";
+import Trend from "@/app/(afterLogin)/_component/Trend";
 
-type Props = {}
-
-const explore = (props: Props) => {
+export default function Home() {
     return (
-        <div>explore</div>
+        <main className={style.main}>
+            <div className={style.formZone}>
+                <SearchForm />
+            </div>
+            <div className={style.trend}>
+                <h3>나를 위한 트렌드</h3>
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+                <Trend />
+            </div>
+        </main>
     )
 }
-
-export default explore
-
-
-
-// (afterLogin)\explore\page.tsx
-// (afterLogin)\messages\page.tsx
-// (afterLogin)\[username]\page.tsx
